@@ -19,7 +19,6 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
         classpath mavenPlugin
-        classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:4.28.2'
         classpath 'io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.10.0'
     }
 }
@@ -27,7 +26,6 @@ buildscript {
 
 
 allprojects {
-    apply plugin: 'com.jfrog.artifactory'
     apply plugin: 'maven-publish'
     apply plugin: 'com.github.dcendents.android-maven'
     repositories {
