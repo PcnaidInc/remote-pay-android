@@ -31,3 +31,11 @@ The Android project includes a connector and an example POS. To work with the pr
 * [Tutorial for the Android SDK](https://docs.clover.com/clover-platform/docs/android)
 * [API Documentation](https://clover.github.io/remote-pay-android/4.3.6/docs/)
 * [Clover Developer Community](https://community.clover.com/index.html)
+
+## CI
+
+Continuous integration runs on pull requests and pushes to the `master` branch. The workflow performs:
+
+- **Lint** — Android lint checks via `gradle lint`
+- **Test** — Unit tests via `gradle test`
+- **Assemble** — Build verification via `gradle assemble`
