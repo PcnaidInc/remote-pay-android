@@ -27,9 +27,6 @@ buildscript {
 
 
 allprojects {
-    apply plugin: 'com.jfrog.artifactory'
-    apply plugin: 'maven-publish'
-    apply plugin: 'com.github.dcendents.android-maven'
     repositories {
         mavenLocal()
         mavenCentral()
@@ -38,6 +35,9 @@ allprojects {
 }
 
 subprojects {
+    apply plugin: 'com.jfrog.artifactory'
+    apply plugin: 'maven-publish'
+    apply plugin: 'com.github.dcendents.android-maven'
 
     repositories {
         mavenLocal()
